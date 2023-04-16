@@ -1,0 +1,51 @@
+/*----- GENERAL STYLE -----*/
+a{
+    color: inherit;
+}
+
+/*----- SECTIONS -----*/
+/*----- NAV -----*/
+.navbar-brand > img{
+    width: 50px;
+
+}
+
+.header-main{
+    min-height: 100vh;
+}
+
+#texto-descripcion{
+    color: #CEC3D5;
+    text-align: center;
+}
+
+
+
+/* CONTENEDOR DE BOTONES */
+
+#btns{
+    margin-top: 100px;
+    border: 5px dashed #ddd;
+}
+
+#btn_PostO{
+    margin-inline: 13.5vh;
+    border-radius: 15px;
+}
+
+
+#btn_InO{
+    margin-inline: 13.5vh;
+    border-radius: 15px;
+}
+
+
+#btn_PreO{
+    margin-inline: 13.5vh;
+    border-radius: 15px;
+}
+
+#tabla{
+    width: 500px;
+    text-align: center;
+}

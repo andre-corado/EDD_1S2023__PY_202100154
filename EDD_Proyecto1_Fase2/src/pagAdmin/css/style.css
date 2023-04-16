@@ -1,0 +1,87 @@
+/*----- GENERAL STYLE -----*/
+a{
+    color: inherit;
+}
+
+/*----- SECTIONS -----*/
+/*----- NAV -----*/
+.navbar-brand > img{
+    width: 50px;
+
+}
+
+.header-main{
+    min-height: 100vh;
+}
+
+#texto-descripcion{
+    color: #CEC3D5;
+    text-align: center;
+}
+
+/*  BARRA DE ARCHIVOS   */
+.drag-area{
+    margin-top: 100px;
+    border: 5px dashed #ddd;
+    height: 300px;
+    width: 550px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag-area.active{
+    background-color: #b8d4fe;
+    color: black;
+    border: 2px dashed #618ac9;
+}
+
+.drag-area h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.drag-area span{
+    font-size: 19px;
+    font-weight: 500;
+    color: #000;
+}
+
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    background-color: #5256ad;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #ddd;
+}
+
+#preview{
+    margin-top: 10px;
+}
+
+.status-text{
+    padding: 0 10px;
+}
+
+.success{
+    color: #52ad5a;
+}
+
+.failure{
+    color: #ff0000;
+}
