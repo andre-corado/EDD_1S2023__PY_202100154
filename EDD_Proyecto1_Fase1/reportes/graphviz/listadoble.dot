@@ -1,0 +1,33 @@
+digraph listadoble{
+node[shape = box fillcolor = "white" style = filled];
+subgraph cluster_l{ 
+label = "Lista de Estudiante" 
+edge[dir = "both" minlen = 2] 
+nodon1[width = 1.2 label = "null" fillcolor = white] 
+nodon2[width = 1.2 label = "null" fillcolor = white] 
+nodo0[width = 1.2 label="202103718\nharry"]
+nodo1[width = 1.2 label="202103719\nmaia"]
+nodo2[width = 1.2 label="201780044\nLeonardo"]
+nodon1 -> nodo0
+nodo0 -> nodo1
+nodo1 -> nodo2
+nodo2 -> nodon2
+{rank = same;nodon1;nodon2;nodo0;nodo1;nodo2}
+pila0[fontsize = 8 shape = record fillcolor = white label = "{pila|Se inició sesión\n2 March 2023 18:45:31|Se inició sesión\n2 March 2023 18:45:06}"]
+nodo0 -> pila0
+pila1[fontsize = 8 shape = record fillcolor = white label = "{pila|Se inició sesión\n2 March 2023 18:45:47}"]
+nodo1 -> pila1
+}
+}1 -> nodo2
+nodo2 -> nodo3
+nodo3 -> nodo4
+nodo4 -> nodo5
+nodo5 -> nodo6
+nodo6 -> nodo7
+nodo7 -> nodo8
+nodo8 -> nodo9
+nodo9 -> nodo10
+nodo10 -> nodon2
+{rank = same;nodon1;nodon2;nodo0;nodo1;nodo2;nodo3;nodo4;nodo5;nodo6;nodo7;nodo8;nodo9;nodo10}
+}
+}

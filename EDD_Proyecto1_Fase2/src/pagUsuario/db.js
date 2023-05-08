@@ -2,7 +2,10 @@ import Arbol_avl from "../pagAdmin/estudiante/arbolAVL.js";
 import CircularJSON from "../circular-json.js";
 import ArbolNArio from "./ArbolCarpetas/arbolN.js";
 import Matriz from "./ArbolCarpetas/matriz.js";
+import ListaSimplePermisosHTML from "../../../EDD_Proyecto1_Fase3/PermisosHTML/listaPermisos.js"
 
+var destino
+var permiso
 /* 
         --------------- CREAR CARPETA ---------------
 */
@@ -52,10 +55,9 @@ export function agregarMatrizD(texto, rutaUnida, numero){// texto => texto.txt |
             carpeta = "/"
 
         }else{carpeta = ruta[ruta.length - 1]}
-        
-        console.log(carpeta)
+        console.log(texto + " " + carpeta + " " + numero)
         var respuest = struct.addMatrizD(struct.raiz, carnet, texto, carpeta, numero);
-        console.log("RESPUESTA DE MATRIZ:\n"+respuest+"\n");
+        // console.log("RESPUESTA DE MATRIZ:\n"+respuest+"\n");
         localStorage.setItem("structEstudiantes", JSON.stringify(CircularJSON.stringify(struct)));
         alert("Archivo cargado correctamente!")
         return true
@@ -68,6 +70,7 @@ export function agregarMatrizD(texto, rutaUnida, numero){// texto => texto.txt |
 /* 
         --------------- PERMISOS PARA EL USUARIO ---------------
 */
+var listPermisos = new ListaSimplePermisosHTML();
 export function permisos(textoInput, rutaUnida){
     let arreglo = textoInput.split("-")
     var carnet = localStorage.getItem("estudiante")
@@ -98,13 +101,21 @@ export function permisos(textoInput, rutaUnida){
         matriz.coordenadaX = nodoMatriz.filesCarpeta.coordenadaX
         matriz.coordenadaY = nodoMatriz.filesCarpeta.coordenadaY
         matriz.colocarPermiso(arreglo[0], arreglo[1], arreglo[2])
-        console.log(matriz.reporte())
+        //console.log(matriz.reporte())
         
         structN.permisosDeCarpeta(structN.raiz, 1, 0, carpeta, JSON.stringify(CircularJSON.stringify(matriz)))
         // ENCONTRAR AL ESTUDIANTE EL CUAL MODIFICAR LA CARPETA
         struct.permisosUser(struct.raiz, carnet, structN)
 
         localStorage.setItem("structEstudiantes", JSON.stringify(CircularJSON.stringify(struct)))
+
+        //                  HTML DE PERMISOS
+        
+        // console.log("---------------ahh------------------")
+        // console.log(carnet + "  " + arreglo[1] + "  " + rutaUnida + "  " + arreglo[0] + "  " + arreglo[2])
+        listPermisos.add(carnet, arreglo[1], rutaUnida, arreglo[0], arreglo[2])
+        localStorage.setItem("PermisosHTML", JSON.stringify(listPermisos))
+        alert("permiso cargado correctamente!")
     }
 
 }

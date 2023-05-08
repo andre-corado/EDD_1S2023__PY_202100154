@@ -1,0 +1,16 @@
+{
+	"alumnos": [
+	 	{
+	 	 	"nombre": "Emma Stone",
+	 	 	"carnet": 2002039485,
+	 	 	"password": "3hd8gsdfg4f",
+	 	 	"Carpeta_Raiz": "/"
+	 	 },
+	 	{
+	 	 	"nombre": "Laura pausini",
+	 	 	"carnet": 199002938,
+	 	 	"password": "sdfh",
+	 	 	"Carpeta_Raiz": "/"
+	 	 }
+    ]
+}

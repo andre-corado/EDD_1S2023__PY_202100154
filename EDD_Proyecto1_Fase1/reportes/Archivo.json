@@ -1,0 +1,94 @@
+{
+	"alumnos": [
+	 	{
+	 	 	"nombre": "Eminem",
+	 	 	"carnet": 203728394,
+	 	 	"password": "3hd84f",
+	 	 	"Carpeta_Raiz": "/"
+	 	 },
+	 	{
+	 	 	"nombre": "Leo Messi",
+	 	 	"carnet": 203392928,
+	 	 	"password": "d4ig49g",
+	 	 	"Carpeta_Raiz": "/"
+	 	 },
+	 	{
+	 	 	"nombre": "Leonardo Martinez",
+	 	 	"carnet": 201780044,
+	 	 	"password": "skflj934",
+	 	 	"Carpeta_Raiz": "/"
+	 	 },
+		{
+			"nombre": "Juan perez",
+			"carnet": 203864829,
+			"password": "3hd84f",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "Cristiano Ronaldo",
+			"carnet": 203917839,
+			"password": "sadgnh",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "Maicol Miud",
+			"carnet": 749092738,
+			"password": "ags2",
+			"Carpeta_Raiz": "/"
+		},
+		{
+			"nombre": "Alvaro Rodriguex",
+			"carnet": 201503927,
+			"password": "fssdecr",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "Jeser Molida",
+			"carnet": 238303782,
+			"password": "dfsvg",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "James Lou",
+			"carnet": 294883827,
+			"password": "dqwd",
+			"Carpeta_Raiz": "/"
+		},
+		{
+			"nombre": "Lourdes Mario",
+			"carnet": 837292637,
+			"password": "asfwe",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "Aaron Lopez",
+			"carnet": 283902736,
+			"password": "sdf3f",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "Jhon Faez",
+			"carnet": 200371829,
+			"password": "dsfagert",
+			"Carpeta_Raiz": "/"
+		},
+		{
+			"nombre": "Jude Belingham",
+			"carnet": 200192738,
+			"password": "dsgvrg",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "Harry Kane",
+			"carnet": 100293849,
+			"password": "sfdawef",
+			"Carpeta_Raiz": "/"
+		},
+	   {
+			"nombre": "Harry Maguiare",
+			"carnet": 200302029,
+			"password": "dwq1324",
+			"Carpeta_Raiz": "/"
+		}
+	]
+}

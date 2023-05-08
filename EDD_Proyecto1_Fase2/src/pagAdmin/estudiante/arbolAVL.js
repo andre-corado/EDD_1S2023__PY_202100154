@@ -456,5 +456,50 @@ export default class Arbol_avl{
         this.raiz = null;
     }
 
+     addStructHash(raiz, hash){
+        if(raiz !== null){
+            if(raiz.izq !== null){
+                this.addStructHash(raiz.izq, hash)
+            }
+            
+            const si = this.hola(raiz.password)
+            console.log(si)
+            
+            hash.insertar(raiz.carnet, raiz.nombre, raiz.password, JSON.stringify(CircularJSON.stringify(raiz.archivos)))
+
+            if(raiz.der !== null){
+                this.addStructHash(raiz.der, hash)
+            }
+        }
+    }
+
+    recorridoArbol(raiz) {
+
+        const list = []
+
+        function iterate(raiz) {
+            if (raiz != null) {
+                // add the value
+                list.push(
+                    {
+                        nombre: raiz.nombre,
+                        carnet: raiz.carnet,
+                        password: raiz.password,
+                        archivos: raiz.archivos
+                    }
+                    );
+                // iterate the left side
+                iterate(raiz.izq);
+                // iterate the right side
+                iterate(raiz.der);
+            }
+        }
+
+        iterate(raiz);
+
+        return list;
+    }
+
+    
     
 }

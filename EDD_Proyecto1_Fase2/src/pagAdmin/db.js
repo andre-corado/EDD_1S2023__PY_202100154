@@ -11,3 +11,5 @@ export function addEstudiante(nombre, carnet, password){
     arbolEstudiantes.push(carnet, nombre, password);
     localStorage.setItem("structEstudiantes", JSON.stringify(CircularJSON.stringify(arbolEstudiantes)))
 }
+
+

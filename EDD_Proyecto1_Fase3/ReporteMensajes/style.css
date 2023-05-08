@@ -1,0 +1,24 @@
+/*----- GENERAL STYLE -----*/
+a{
+    color: inherit;
+}
+
+/*----- SECTIONS -----*/
+/*----- NAV -----*/
+.navbar-brand > img{
+    width: 50px;
+
+}
+
+.header-main{
+    min-height: 100vh;
+}
+
+#contenedor_image{
+    width: 95%;
+    height: 85%;
+    overflow: auto;
+    margin: auto; 
+    position: absolute;
+    top:0; left: 0; bottom: 0; right: 0;
+}

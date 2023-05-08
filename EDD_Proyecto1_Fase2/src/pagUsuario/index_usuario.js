@@ -94,6 +94,7 @@ var botonBusqueda = document.getElementById("botonBusqueda");
 var btn_eliminarCarpeta = document.getElementById("eliminarCarpeta");
 var btn_login = document.getElementById("btn4")
 var btn_permisos = document.getElementById("btn_permisos")
+var boton_mensajes = document.getElementById("btn6")
 
 texto.innerText = localStorage.getItem("estudiante")
 
@@ -101,6 +102,10 @@ texto.innerText = localStorage.getItem("estudiante")
         INICIALIZAR LA BITACORA DEL ESTUDIANTE
 */
 var Bitacora = new ListaCircular()
+
+boton_mensajes.addEventListener("click", function(event){
+    window.location.replace("../../../EDD_Proyecto1_Fase3/mensajeria/mensajeria_.html")
+})
 
 
 /* REGRESO AL LOGIN */
@@ -156,6 +161,7 @@ repoteCarpeta.addEventListener("show.bs.modal", function (event){
     var grafica =  struct.reporte_carpetas(ObjEstudiantes.raiz, estudiante)
     
     let url = 'https://quickchart.io/graphviz?graph=';
+    console.log(url+grafica)
     document.getElementById("report_carpetas").src = url+grafica
 })
 
@@ -196,9 +202,11 @@ cargar_archivos.addEventListener("click", function (event){
 /*
         --------------- COLOCAR PERMISOS ---------------
 */
+
 btn_permisos.addEventListener("click", function (event){
     var inputPermisos = document.getElementById("permisos_C").value
     var ruta = CarpetaActual.value
+    console.log(inputPermisos)
     DB.permisos(inputPermisos, ruta)
 })
 
